@@ -15,7 +15,10 @@ namespace MyLibrary
         {
             return 5;
         }
-        public abstract decimal CalculateMonthlyPayment();
+        public virtual decimal CalculateMonthlyPayment()
+        {
+            return 12000;
+        }
     }
 
     public class Secretary : Employee
@@ -30,5 +33,10 @@ namespace MyLibrary
         {
             return 30000;
         }
+    }
+
+    public class Developer : Employee
+    {
+        
     }
 }
