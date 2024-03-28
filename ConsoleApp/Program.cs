@@ -13,6 +13,7 @@ WriteEmployeeInfo(Maria);
 WriteEmployeeInfo(Miguel);
 WriteEmployeeInfo(Pedro);
 
+//Polimorfismo
 void WriteEmployeeInfo(Employee employee)
 {
     Console.WriteLine($"{employee.Name} : {employee.CalculateMonthlyPayment()}");
