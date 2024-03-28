@@ -10,6 +10,11 @@ namespace MyLibrary
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
+        public int GetInt() 
+        {
+            return 5;
+        }
         public abstract decimal CalculateMonthlyPayment();
     }
 
@@ -21,6 +26,9 @@ namespace MyLibrary
 
     public class Manager : Employee
     {
-
+        public override decimal CalculateMonthlyPayment()
+        {
+            return 30000;
+        }
     }
 }
