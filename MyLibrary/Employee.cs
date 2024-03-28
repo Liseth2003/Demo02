@@ -13,9 +13,10 @@ namespace MyLibrary
         public abstract decimal CalculateMonthlyPayment();
     }
 
-    public class Secretary : Employee 
+    public class Secretary : Employee
     {
-        
+        public override decimal CalculateMonthlyPayment() => 15000;
+    
     }
 
     public class Manager : Employee
