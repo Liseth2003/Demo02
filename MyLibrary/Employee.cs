@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace MyLibrary
 {
-    public class Employee
+    public abstract class Employee
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public decimal CalculateMonthlyPayment() 
-        {
-            
-        }
+        public abstract decimal CalculateMonthlyPayment();
     }
 
     public class Secretary : Employee 
